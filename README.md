@@ -16,4 +16,5 @@
 <pandown type="123" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown>
 <pandown type="qn" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown>
 <pandown type="github" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown>
+<pandown type="lq" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown>
 ```
