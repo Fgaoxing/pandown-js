@@ -1,0 +1,19 @@
+{
+  "name": "pandown",
+  "version": "1.0.0",
+  "description": "为网盘提供下载链接按钮",
+  "main": "pandown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fgaoxing/pandown-js.git"
+  },
+  "author": "Fgaoxing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fgaoxing/pandown-js/issues"
+  },
+  "homepage": "https://github.com/Fgaoxing/pandown-js#readme"
+}
