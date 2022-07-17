@@ -1,6 +1,6 @@
 {
   "name": "pandown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "为网盘提供下载链接按钮",
   "main": "pandown.js",
   "scripts": {
