@@ -1,0 +1,23 @@
+name: npm-publish
+on:
+  push:
+    tags: ['*']
+jobs:
+  npm-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      - uses: actions/checkout@v3
+        # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: edit version
+        run: sed -i 's/{{package_version}}/${{ steps.get_version.outputs.VERSION }}/' ./package.json
+      
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
